@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://i.pcmag.com/imagery/articles/00RxTGdXsP7Zod4q4vvhI52-4..v1746559017.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark Overlay */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content Container */
+.container {
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Event Title */
+.container h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+/* Description */
+.description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Event Info */
+.info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+.share {
+  color: #ccc;
+  font-size: 0.95em;
+  text-decoration: none;
+}
+
+.share:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .container h1 {
+    font-size: 1.8em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 0.95em;
+    padding: 10px 20px;
+  }
+}
